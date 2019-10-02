@@ -1,5 +1,7 @@
 //
-// Created by daniyal on 2019-09-30.
+// Created by Daniyal Maniar on 2019-09-30.
+// Netid: 16mdm13
+// Student #: 20064993
 //
 #pragma once
 
@@ -9,25 +11,25 @@
 #include <vector>
 #include <string>
 #include <iostream>
-#include <cmath>
 #include <fstream>
 #include <iterator>
-#include <algorithm>
 
 using namespace std;
 
+// This is the class definition for the InsultGenerator class
 class InsultGenerator {
 private:
     vector<string> col1, col2, col3;
     int n;
-    string genMapping (int i, int j, int k);
+    string genMapping (const int i, const int j, const int k);
 public:
     void initialize ();
     string talkToMe ();
-    vector<string> generate (int value);
-    void generateAndSave(string fileName, int value);
+    vector<string> generate (const int value);
+    void generateAndSave(const string fileName, const int value);
 };
 
+// Class definition of FileException Class
 class FileException{
 public:
     FileException (const string& msg);
@@ -36,6 +38,7 @@ private:
     string msg_;
 };
 
+// Class definition of NumInsultsOutOfBounds Class
 class NumInsultsOutOfBounds {
 public:
     NumInsultsOutOfBounds (const string& msg);
