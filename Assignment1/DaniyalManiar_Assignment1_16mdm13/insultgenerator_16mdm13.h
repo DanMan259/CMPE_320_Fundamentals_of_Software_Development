@@ -18,7 +18,7 @@
 using namespace std;
 
 // This is the class definition for the InsultGenerator class
-// All my comments for each function are located in the cpp implementation cifile
+// All my comments for each function are located in the cpp implementation file
 class InsultGenerator {
 private:
     vector<string> col1, col2, col3;
