@@ -9,6 +9,11 @@
  * If you wish to build a GUI interface for the puzzle, you may certainly do so, as
  * long as the unit tests are still carried out.
  */
+//
+// Created by Daniyal Maniar on 2019-11-08.
+// Netid: 16mdm13
+// Student #: 20064993
+//
 #include <string>
 #include <iostream>
 #include <ctime>
@@ -93,7 +98,6 @@ void testJumble() {
 	// While debugging, you can use capital letters to make the hidden string easier to locate
 	JumblePuzzle jp1("HELLO", "easy");
 	showJumble(jp1.getJumble(), jp1.getSize());
-    cout << "HERE" << endl;
 	JumblePuzzle jp2(jp1);
 	cout << "Should look the same:" << endl;
 	showJumble(jp2.getJumble(), jp2.getSize());
@@ -153,14 +157,48 @@ void testJumble() {
 		JumblePuzzle jp("HIDDENWORD", "hard");
 	cout << "\nPassed memory leak test!" << endl;
 
+	// Custom Test Cases
+
+    // Short input
+    cout << endl << "Testing short input:" << endl;
+    try {
+        JumblePuzzle jp("HI", "easy");
+    }catch (BadJumbleException& e){
+        cout << e.what() << endl << endl;
+    }
+
+    // Long input
+    cout << "Testing long input:" << endl;
+    try {
+        JumblePuzzle jp("HIDDENWORDS", "medium");
+    }catch (BadJumbleException& e){
+        cout << e.what() << endl << endl;
+    }
+
+    // Incorrect character input
+    cout << "Testing incorrect character input:" << endl;
+    try {
+        JumblePuzzle jp("HIDDENWORD$", "hard");
+    }catch (BadJumbleException& e){
+        cout << e.what() << endl << endl;
+    }
+
+    // Incorrect difficulty input
+    cout << "Testing incorrect difficulty input:" << endl;
+    try {
+        JumblePuzzle jp("HIDDENWORD", "ea$y");
+    }catch (BadJumbleException& e){
+        cout << e.what() << endl << endl;
+    }
+
 } // end testJumble
 
 int main() {
 
 	testJumble();
-
+    cout << endl << "Playing game now:" << endl << endl;
 	// Make sure your class works before you play the game!
-	//playGame();
+	playGame();
 
 	return 0;
 } // end main
