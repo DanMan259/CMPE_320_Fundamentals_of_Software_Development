@@ -1,0 +1,150 @@
+/home/daniyal/school/CMPE_320_Fundamentals_of_Software_Development/Assignment4/cmake-build-debug/Assignment4
+Testing copy constructor:
+
+   0  1  2  3  4  5  6  7  8  9
+ 0 f  t  p  e  f  q  j  o  x  q
+ 1 i  d  r  h  d  d  w  d  w  q
+ 2 d  a  p  b  c  k  b  k  o  r
+ 3 y  u  k  n  a  q  e  j  g  d
+ 4 z  o  i  q  x  h  u  t  s  s
+ 5 k  v  t  z  y  e  l  z  i  z
+ 6 s  g  v  f  w  l  x  a  e  d
+ 7 f  g  t  q  w  l  d  s  m  y
+ 8 l  y  t  g  z  o  d  m  t  l
+ 9 m  o  s  j  t  o  f  q  q  l
+
+Should look the same:
+
+   0  1  2  3  4  5  6  7  8  9
+ 0 f  t  p  e  f  q  j  o  x  q
+ 1 i  d  r  h  d  d  w  d  w  q
+ 2 d  a  p  b  c  k  b  k  o  r
+ 3 y  u  k  n  a  q  e  j  g  d
+ 4 z  o  i  q  x  h  u  t  s  s
+ 5 k  v  t  z  y  e  l  z  i  z
+ 6 s  g  v  f  w  l  x  a  e  d
+ 7 f  g  t  q  w  l  d  s  m  y
+ 8 l  y  t  g  z  o  d  m  t  l
+ 9 m  o  s  j  t  o  f  q  q  l
+
+Dotted diagonal:
+
+   0  1  2  3  4  5  6  7  8  9
+ 0 .  t  p  e  f  q  j  o  x  q
+ 1 i  .  r  h  d  d  w  d  w  q
+ 2 d  a  .  b  c  k  b  k  o  r
+ 3 y  u  k  .  a  q  e  j  g  d
+ 4 z  o  i  q  .  h  u  t  s  s
+ 5 k  v  t  z  y  .  l  z  i  z
+ 6 s  g  v  f  w  l  .  a  e  d
+ 7 f  g  t  q  w  l  d  .  m  y
+ 8 l  y  t  g  z  o  d  m  .  l
+ 9 m  o  s  j  t  o  f  q  q  .
+
+Should be same as original 1:
+
+   0  1  2  3  4  5  6  7  8  9
+ 0 f  t  p  e  f  q  j  o  x  q
+ 1 i  d  r  h  d  d  w  d  w  q
+ 2 d  a  p  b  c  k  b  k  o  r
+ 3 y  u  k  n  a  q  e  j  g  d
+ 4 z  o  i  q  x  h  u  t  s  s
+ 5 k  v  t  z  y  e  l  z  i  z
+ 6 s  g  v  f  w  l  x  a  e  d
+ 7 f  g  t  q  w  l  d  s  m  y
+ 8 l  y  t  g  z  o  d  m  t  l
+ 9 m  o  s  j  t  o  f  q  q  l
+
+Should be same as original 2:
+
+   0  1  2  3  4  5  6  7  8  9
+ 0 .  t  p  e  f  q  j  o  x  q
+ 1 i  .  r  h  d  d  w  d  w  q
+ 2 d  a  .  b  c  k  b  k  o  r
+ 3 y  u  k  .  a  q  e  j  g  d
+ 4 z  o  i  q  .  h  u  t  s  s
+ 5 k  v  t  z  y  .  l  z  i  z
+ 6 s  g  v  f  w  l  .  a  e  d
+ 7 f  g  t  q  w  l  d  .  m  y
+ 8 l  y  t  g  z  o  d  m  .  l
+ 9 m  o  s  j  t  o  f  q  q  .
+
+Testing assignment operator:
+
+   0  1  2  3  4  5
+ 0 f  t  p  e  f  q
+ 1 j  o  x  q  i  d
+ 2 e  h  d  d  w  d
+ 3 y  q  d  a  p  b
+ 4 b  k  b  k  o  r
+ 5 y  u  k  n  a  q
+
+Should look the same:
+
+   0  1  2  3  4  5
+ 0 f  t  p  e  f  q
+ 1 j  o  x  q  i  d
+ 2 e  h  d  d  w  d
+ 3 y  q  d  a  p  b
+ 4 b  k  b  k  o  r
+ 5 y  u  k  n  a  q
+
+Star diagonal:
+
+   0  1  2  3  4  5
+ 0 *  t  p  e  f  q
+ 1 j  *  x  q  i  d
+ 2 e  h  *  d  w  d
+ 3 y  q  d  *  p  b
+ 4 b  k  b  k  *  r
+ 5 y  u  k  n  a  *
+
+Should be same as original 3:
+
+   0  1  2  3  4  5
+ 0 f  t  p  e  f  q
+ 1 j  o  x  q  i  d
+ 2 e  h  d  d  w  d
+ 3 y  q  d  a  p  b
+ 4 b  k  b  k  o  r
+ 5 y  u  k  n  a  q
+
+Should be same as original 4:
+
+   0  1  2  3  4  5
+ 0 *  t  p  e  f  q
+ 1 j  *  x  q  i  d
+ 2 e  h  *  d  w  d
+ 3 y  q  d  *  p  b
+ 4 b  k  b  k  *  r
+ 5 y  u  k  n  a  *
+
+Should be same as original 4:
+
+   0  1  2  3  4  5
+ 0 *  t  p  e  f  q
+ 1 j  *  x  q  i  d
+ 2 e  h  *  d  w  d
+ 3 y  q  d  *  p  b
+ 4 b  k  b  k  *  r
+ 5 y  u  k  n  a  *
+
+
+Passed memory leak test!
+
+Testing short input:
+The length of the imputed string is too short
+
+Testing long input:
+The length of the imputed string is too long
+
+Testing incorrect character input:
+The length of the imputed string is too long
+
+Testing incorrect difficulty input:
+Incorrect difficulty specified
+
+
+Playing game now:
+
+Provide a string to hide in the puzzle, all lower case:
